@@ -1,6 +1,9 @@
 import os
 from tweepy import OAuthHandler, API
+from dotenv import load_dotenv
 
+# 환경변수 load
+load_dotenv()
 
 # 환경변수
 consumer_key = os.getenv('consumer_key')
