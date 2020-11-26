@@ -84,8 +84,8 @@ def delete(username = None):
 	username = username
 	id = Users.query.with_entities(Users.id).filter(Users.username == username).first()
 	print(id)
-	Users.query.filter_by(id = id[0]).delete() 
 	Tweet.query.filter_by(user_id = id[0]).delete() 
+	Users.query.filter_by(id = id[0]).delete() 
 
 	db.session.commit()
 	
