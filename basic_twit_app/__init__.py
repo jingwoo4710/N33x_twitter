@@ -6,6 +6,7 @@ from basic_twit_app.models import db, migrate
 
 # DATAVASE_URI ("sqlite:///twit.sqlite3")
 DATABASE_URI = "postgres://wjtwnbjlsljupc:a21855bcb707466b630b9995697cc9d16a182eac951f03431d4acb1cf9a3636b@ec2-3-214-46-194.compute-1.amazonaws.com:5432/d57gss8v0p7oiu"
+#"postgres://wjtwnbjlsljupc:a21855bcb707466b630b9995697cc9d16a182eac951f03431d4acb1cf9a3636b@ec2-3-214-46-194.compute-1.amazonaws.com:5432/d57gss8v0p7oiu"
 
 # Factory pattern
 def create_app():
@@ -18,7 +19,7 @@ def create_app():
 
     app.register_blueprint(main_routes.main_routes)
     app.register_blueprint(tweet_routes.tweet_routes)
-    
+
     return app
 
 
