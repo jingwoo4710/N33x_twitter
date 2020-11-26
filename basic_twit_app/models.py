@@ -1,6 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-from basic_twit_app.API.api import api
+from basic_twit_app.services.twitter_api import api
 
 
 db = SQLAlchemy()
